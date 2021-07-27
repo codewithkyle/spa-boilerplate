@@ -1,7 +1,6 @@
 import db from "@codewithkyle/jsql";
 
 (async () => {
-    // @ts-ignore
     await db.start();
 
     //@ts-ignore
