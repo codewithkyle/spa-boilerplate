@@ -4,7 +4,8 @@
     "brixi": "brixi && mv ./brixi/brixi.css ./src/styles/brixi.css && rmdir ./brixi",
     "build": "run-p build:*",
     "build:js": "twist --src=./src --outDir=./public/js",
-    "build:css": "cssmonster"
+    "build:css": "cssmonster",
+    "production": "npm run build && asset-manager"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
@@ -16,6 +17,7 @@
     "ws": "^7.5.3"
   },
   "devDependencies": {
+    "@codewithkyle/asset-manager": "^1.0.1",
     "@codewithkyle/jsql": "^1.0.3",
     "@codewithkyle/pubsub": "^1.1.1",
     "@codewithkyle/router": "^1.1.0",
