@@ -5,7 +5,8 @@
     "build": "run-p build:*",
     "build:js": "twist --src=./src --outDir=./public/js",
     "build:css": "cssmonster",
-    "production": "npm run build && asset-manager"
+    "production": "npm run build && asset-manager",
+    "watch": "npm-watch"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
@@ -35,5 +36,14 @@
     "@codewithkyle/router",
     "@codewithkyle/supercomponent",
     "lit-html"
-  ]
+  ],
+	"watch": {
+		"build": {
+			"patterns": [
+				"src"
+			],
+			"extensions": "ts,js,scss,css,tsx,jsx,mjs,cjs",
+			"quiet": false
+		}
+	}
 }
