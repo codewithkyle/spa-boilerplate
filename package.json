@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@codewithkyle/asset-manager": "^1.0.1",
-    "@codewithkyle/jsql": "^1.0.4",
+    "@codewithkyle/jsql": "^1.0.5",
     "@codewithkyle/pubsub": "^1.1.1",
     "@codewithkyle/router": "^1.1.0",
     "@codewithkyle/supercomponent": "^1.1.0",
@@ -37,13 +37,13 @@
     "@codewithkyle/supercomponent",
     "lit-html"
   ],
-	"watch": {
-		"build": {
-			"patterns": [
-				"src"
-			],
-			"extensions": "ts,js,scss,css,tsx,jsx,mjs,cjs",
-			"quiet": false
-		}
-	}
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts,js,scss,css,tsx,jsx,mjs,cjs",
+      "quiet": false
+    }
+  }
 }
